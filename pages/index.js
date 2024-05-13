@@ -35,7 +35,7 @@ const Home = () => {
       <Hero />
       <div className="flex flex-wrap bg-white">
       <Container className="flex flex-wrap">
-      <div className="flex items-center w-full lg:w-1/2">
+        <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h2 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
             What is Litigation Scanning?
@@ -161,12 +161,12 @@ const Home = () => {
         title="Trusted by the biggest and the best">
       </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle pretitle="" title="We Digitized the Constitution of the United States">
+      <div>We Will Use the Same State of the Art Technology to Preserve Your Precious Memories</div>
+      <div><a href="/" className="px-4 py-3 font-thin text-white bg-sky-900 rounded-sm  w-auto">
+          Learn More
+      </a></div>
       </SectionTitle>
-      <Faq />
-      <Cta />
       <Footer />
       <PopupWidget />
     </>
