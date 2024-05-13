@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-
+import testimonial from "../public/img/testimonial.png";
 import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
@@ -11,44 +11,41 @@ const Testimonials  = () => {
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+          <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
+            <p className="text-base leading-normal font-normal">
+            These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
             </p>
 
             <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              image={testimonial}
+              name="Patti Williams"
+              title="Supervisory Archivist"
             />
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+        <div className="lg:col-span-2 xl:col-auto">
+          <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
+            <p className="text-base leading-normal font-normal">
+            These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
             </p>
 
             <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              image={testimonial}
+              name="Patti Williams"
+              title="Supervisory Archivist"
             />
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+        <div className="lg:col-span-2 xl:col-auto">
+          <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
+            <p className="text-base leading-normal font-normal">
+            These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
             </p>
 
             <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              image={testimonial}
+              name="Patti Williams"
+              title="Supervisory Archivist"
             />
           </div>
         </div>
@@ -60,18 +57,17 @@ const Testimonials  = () => {
 function Avatar(props) {
   return (
     <div className="flex items-center mt-8 space-x-3">
+      <div>
+        <div className="text-lg font-medium">{props.name}</div>
+        <div className="text-white">{props.title}</div>
+      </div>
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
         <Image
           src={props.image}
-          width="40"
-          height="40"
+          width="60"
           alt="Avatar"
           placeholder="blur"
         />
-      </div>
-      <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
       </div>
     </div>
   );
