@@ -10,42 +10,42 @@ const Form = (props) => {
             <form action="#" method="POST" className="mx-auto">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
-                        <label for="full-name" className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+                        <label htmlFor="full-name" className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
                         <div className="mt-2.5">
-                            <input placeholder="Name" type="text" name="full-name" id="full-name" autocomplete="given-name"
+                            <input placeholder="Name" type="text" name="full-name" id="full-name" autoComplete="given-name"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div>
-                        <label for="email" className="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                        <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">Email</label>
                         <div className="mt-2.5">
-                            <input placeholder="Email" type="email" name="email" id="email" autocomplete="email"
+                            <input placeholder="Email" type="email" name="email" id="email" autoComplete="email"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div>
-                        <label for="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+                        <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
                         <div className="relative mt-2.5">
-                            <input placeholder="Phone Number" type="text" name="phone-number" id="phone-number" autocomplete="tel"
+                            <input placeholder="Phone Number" type="text" name="phone-number" id="phone-number" autoComplete="tel"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div>
-                        <label for="documents_count" className="block text-sm font-semibold leading-6 text-gray-900">How many documents?</label>
+                        <label htmlFor="documents_count" className="block text-sm font-semibold leading-6 text-gray-900">How many documents?</label>
                         <div className="mt-2.5">
                             <input placeholder="Eg. 10" type="documents_count" name="documents_count" id="documents_count"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div>
-                        <label for="documents_type" className="block text-sm font-semibold leading-6 text-gray-900">What Type of Documents?</label>
+                        <label htmlFor="documents_type" className="block text-sm font-semibold leading-6 text-gray-900">What Type of Documents?</label>
                         <div className="relative mt-2.5">
-                            <input placeholder="Eg. 10" type="text" name="documents_type" id="documents_type" autocomplete="tel"
+                            <input placeholder="Eg. 10" type="text" name="documents_type" id="documents_type" autoComplete="tel"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div>
-                        <label for="documents_count" className="block text-sm font-semibold leading-6 text-gray-900">Image enhancement required?</label>
+                        <label htmlFor="documents_count" className="block text-sm font-semibold leading-6 text-gray-900">Image enhancement required?</label>
                         <div className="mt-2.5">
                         <div className="flex h-6 items-center">
                             <button type="button"

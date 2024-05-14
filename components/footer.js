@@ -53,36 +53,36 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h1 className="text-3xl text-white pb-2 font-thin">Contact</h1>
             <div className="max-w-md mt-4 pb-4 text-white dark:text-white border-b-2">
-              <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">Phone:</div>
-                <div class="flex items-center justify-end w-full lg:w-1/2">732-613-7170</div>
+              <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">Phone:</div>
+                <div className="flex items-center justify-end w-full lg:w-1/2">732-613-7170</div>
               </div>
-              <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">Fax:</div>
-                <div class="flex items-center justify-end w-full lg:w-1/2">732-613-2788</div>
+              <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">Fax:</div>
+                <div className="flex items-center justify-end w-full lg:w-1/2">732-613-2788</div>
               </div>
-              <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">Email:</div>
-                <div class="flex items-center justify-end w-full lg:w-1/2">info@idiimage.com</div>
+              <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">Email:</div>
+                <div className="flex items-center justify-end w-full lg:w-1/2">info@idiimage.com</div>
               </div>
             </div>
             <div className="max-w-md mt-4 pb-4 text-white dark:text-white border-b-2">
-            <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">Address:</div>
+            <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">Address:</div>
               </div>
-              <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">United States<br />
+              <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
                 410 New Brunswick Ave.<br />
 								East Brunswick, NJ, 08816<br /><br />
                 </div>
-                <div class="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/410+New+Brunswick+Ave,+East+Brunswick,+NJ+08816/@40.4164806,-74.4127742,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c57f3b163a39:0x60446978ef92d3ef!8m2!3d40.4164806!4d-74.4105855" >Directions</a></div>
+                <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/410+New+Brunswick+Ave,+East+Brunswick,+NJ+08816/@40.4164806,-74.4127742,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c57f3b163a39:0x60446978ef92d3ef!8m2!3d40.4164806!4d-74.4105855" >Directions</a></div>
               </div>
-              <div class="flex">
-                <div class="flex items-center justify-start w-full lg:w-1/2">United States<br />
+              <div className="flex">
+                <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
                 230 Long Hill Cross Road.<br />
 								Shelton, CT 06484<br /><br />
                 </div>
-                <div class="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/230+Long+Hill+Cross+Rd,+Shelton,+CT+06484/@41.287549,-73.1067487,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80aa4650cb415:0x6b9faaf87f99ace8!8m2!3d41.287545!4d-73.10456" >Directions</a></div>
+                <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/230+Long+Hill+Cross+Rd,+Shelton,+CT+06484/@41.287549,-73.1067487,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80aa4650cb415:0x6b9faaf87f99ace8!8m2!3d41.287545!4d-73.10456" >Directions</a></div>
               </div>
             </div>
           </div>

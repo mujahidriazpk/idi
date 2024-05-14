@@ -93,7 +93,8 @@ const Navbar = () => {
           <div className="flex grey text-gray-500 clear-both w-auto text-sm">(Call Us) 1-800-380-9058</div>
           <div className="flex justify-end"><Link href="/" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto">
           Get Quote
-          </Link></div>
+          </Link>
+          </div>
 
           {/*<ThemeChanger />*/}
         </div>
