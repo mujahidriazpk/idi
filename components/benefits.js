@@ -18,9 +18,9 @@ const Benefits = (props) => {
                 {data.title}
               </h3>
 
-              <p className="max-w-2xl py-4 text-lg leading-normal text-white-500 lg:text-xl xl:text-xl text-white">
+              <div className="max-w-2xl py-4 text-lg leading-normal text-white-500 lg:text-xl xl:text-xl text-white">
                 {data.desc}
-              </p>
+              </div>
             </div>
 
             <div className="w-full mt-5">

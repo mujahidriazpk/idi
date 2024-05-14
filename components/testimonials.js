@@ -12,9 +12,9 @@ const Testimonials  = () => {
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
-            <p className="text-base leading-normal font-normal">
+            <div className="text-base leading-normal font-normal">
             These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
-            </p>
+            </div>
 
             <Avatar
               image={testimonial}
@@ -25,9 +25,9 @@ const Testimonials  = () => {
         </div>
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
-            <p className="text-base leading-normal font-normal">
+            <div className="text-base leading-normal font-normal">
             These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
-            </p>
+            </div>
 
             <Avatar
               image={testimonial}
@@ -38,9 +38,9 @@ const Testimonials  = () => {
         </div>
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">
-            <p className="text-base leading-normal font-normal">
+            <div className="text-base leading-normal font-normal">
             These collections are being digitized into a product where they are including other collections, similar collections, from repositories all over the world. So by indexing & making them searchable, it really gives such a great context, a very rich context, for our collections, when you see it along with all these other collections all over the world. For the researcher, that’s just indispensable.
-            </p>
+            </div>
 
             <Avatar
               image={testimonial}

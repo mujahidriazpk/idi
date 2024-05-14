@@ -45,11 +45,11 @@ const Home = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-          <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+          <div className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Nextly is a free landing page & marketing website
               template for startups and indie projects. Its built with
               Next.js & TailwindCSS. And its completely open-source.
-            </p>
+            </div>
           </div>
         </div>
       </Container>
@@ -70,25 +70,25 @@ const Home = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <h5>Increased Efficiency</h5>
-            <p className="text-2xl leading-normal">
+            <div className="text-2xl leading-normal">
               Saves time and effort, allowing to focus on more strategic tasks.
-            </p>
+            </div>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <h5>Improved Accuracy</h5>
-            <p className="text-2xl leading-normal">
+            <div className="text-2xl leading-normal">
               OCR technology ensures that documents are scanned and indexed accurately.
-            </p>
+            </div>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
           <h5>Enhanced Accessibility</h5>
-            <p className="text-2xl leading-normal ">
+            <div className="text-2xl leading-normal ">
               Digitized documents can be accessed from anywhere, anytime, on any device.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -98,17 +98,17 @@ const Home = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <h5>Reduced Costs</h5>
-            <p className="text-2xl leading-normal">
+            <div className="text-2xl leading-normal">
               Saves money on physical storage space and paper costs.
-            </p>
+            </div>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <h5>Simplified Discovery</h5>
-            <p className="text-2xl leading-normal">
+            <div className="text-2xl leading-normal">
               Makes it easier to find and produce relevant documents for legal proceedings.
-            </p>
+            </div>
           </div>
         </div>
       </div>
