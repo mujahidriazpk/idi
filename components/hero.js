@@ -6,35 +6,35 @@ const Hero = () => {
   return (
     <>
       <div className="flex flex-wrap bg-[url('/img/hero_bg.png')] bg-no-repeat bg-center bg-cover">
-      <Container>
-        <div className="flex flex-col justify-end h-96">
-          <div className="text-3xl text-center text-white p-3">
-          Highest Quality • Fastest Turnaround • Most Affordable
+        <Container>
+          <div className="flex flex-col justify-end h-96">
+            <div className="text-3xl text-left text-white py-3">
+              Highest Quality • Fastest Turnaround • Most Affordable
+            </div>
+            <div className="text-5xl text-left text-white font-extralight pb-12">
+              Litigation Document Scanning Services in the World.
+            </div>
           </div>
-          <div className="text-5xl text-center text-white font-extralight">
-          <h1 >Litigation Document Scanning Services.</h1>
-          </div>
-        </div>
-      </Container>
+        </Container>
       </div>
       <div className="flex flex-col justify-center">
-      <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
-            </div>
+        <div className="flex flex-wrap justify-center gap-5 my-10 md:justify-around">
+          <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <AmazonLogo />
           </div>
+          <div className="text-gray-400 dark:text-gray-400">
+            <VerizonLogo />
+          </div>
+          <div className="text-gray-400 dark:text-gray-400">
+            <MicrosoftLogo />
+          </div>
+          <div className="pt-1 text-gray-400 dark:text-gray-400">
+            <NetflixLogo />
+          </div>
+          <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <SonyLogo />
+          </div>
+        </div>
       </div>
     </>
   );

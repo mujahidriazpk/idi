@@ -34,8 +34,8 @@ export default function Footer() {
             <div className="max-w-md mt-4 text-white dark:text-white">
               Innovative Document Imaging has been in business for over 23 years and is a world leader in document imaging. And document management solutions. IDI maintains two state-of-the-art conversion facilities in East Brunswick, NJ (headquarters) and a second facility in Shelton, CT. Our company mission is to supply the best service possible at a reasonable cost for the digital conversion of paper documents, newspapers, maps, books, bound materials, microfilm and microfiche.
             </div>
-
-            <div className="mt-5 hide">
+            {/*}
+            <div className="mt-5">
               <a
                 href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
                 target="_blank"
@@ -48,7 +48,7 @@ export default function Footer() {
                   height="44"
                 />
               </a>
-            </div>
+            </div>*/}
           </div>
           <div className="lg:col-span-2">
             <h1 className="text-3xl text-white pb-2 font-thin">Contact</h1>

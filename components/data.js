@@ -5,6 +5,7 @@ import {
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
+  CheckCircleIcon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../public/img/law-firm.png";
@@ -18,17 +19,17 @@ const benefitOne = {
     {
       title: "",
       desc: "Over 23 years experience working with the most prestigious class action firms as well as small and medium sized firms.",
-      icon: <FaceSmileIcon />,
+      icon: <CheckCircleIcon />,
     },
     {
       title: "",
       desc: "Trusted with digitizing priceless documents such as the United States Constitution",
-      icon: <ChartBarSquareIcon />,
+      icon: <CheckCircleIcon />,
     },
     {
       title: "",
       desc: "We provide unparalleled quality, turnaround time and overall value",
-      icon: <CursorArrowRaysIcon />,
+      icon: <CheckCircleIcon />,
     },
   ],
 };
