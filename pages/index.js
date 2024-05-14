@@ -13,6 +13,7 @@ import Container from "../components/container";
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
+import Form from "../components/form";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
@@ -167,6 +168,7 @@ const Home = () => {
           Learn More
       </a></div>
       </SectionTitle>
+      <Form />
       <Footer />
       <PopupWidget />
     </>

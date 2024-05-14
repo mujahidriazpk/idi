@@ -89,9 +89,9 @@ const Navbar = () => {
           </ul>
         </div>
           */}
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <div className="grey text-gray-500 clear-both w-auto">(Call Us) 1-800-380-9058</div>
-          <div><Link href="/" className="px-4 py-3 font-thin text-white bg-sky-900 rounded-sm md:ml-5 w-auto">
+        <div className="mr-3 space-x-4 block nav__item">
+          <div className="flex grey text-gray-500 clear-both w-auto">(Call Us) 1-800-380-9058</div>
+          <div className="flex justify-end"><Link href="/" className="px-4 py-3 font-thin text-white bg-sky-900 rounded-sm md:ml-5 w-auto">
           Get Quote
           </Link></div>
 
