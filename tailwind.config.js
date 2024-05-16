@@ -15,6 +15,9 @@ module.exports = {
       sans: ["Mulish", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
     },
+    color:{
+      'body-text':'#333333'
+    }
   },
   variants: {
     extend: {},
