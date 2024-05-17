@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import heroImg from "../public/img/hero.png";
 import files from "../public/img/files.png";
@@ -17,6 +18,7 @@ import Form from "../components/form";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import PopupWidget from "../components/popupWidget";
+import TestimonialScroller from '../components/TestimonialScroller';
 import {
   FaceSmileIcon,
   ChartBarSquareIcon,
@@ -26,6 +28,7 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
+import LogoScroller from '../components/LogoScroller';
 const Home = () => {
   return (
     <>
@@ -40,6 +43,8 @@ const Home = () => {
 
       <Navbar />
       <Hero />
+      <LogoScroller />
+      
       <div className="flex flex-wrap bg-[#F5F6F8]">
         <Container className="flex flex-wrap py-0">
           <div className="flex items-center w-full lg:w-1/2">
@@ -174,7 +179,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Testimonials />
+      <TestimonialScroller />
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
           We Digitized the Constitution of the United States</div>

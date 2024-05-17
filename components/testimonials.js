@@ -11,6 +11,7 @@ const Testimonials = () => {
     <Container className="pb-0">
       <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
         Trusted by the biggest and the best</div>
+        
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full text-white bg-[#2164A1] p-8">

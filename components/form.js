@@ -7,7 +7,7 @@ const Form = (props) => {
         <Container >
             <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
             Request a quote</div>
-            <form action="#" method="POST" className="mx-auto">
+            <form action="#" method="POST" className="mx-auto" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="full-name" className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
@@ -67,4 +67,30 @@ const Form = (props) => {
         </Container>
     );
 }
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://idiimage.com/wp-json/custom/v1/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(''),
+      });
+
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        alert('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again.');
+    }
+  };
 export default Form;

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
-
 const Hero = () => {
   return (
     <>
@@ -16,25 +15,6 @@ const Hero = () => {
             </div>
           </div>
         </Container>
-      </div>
-      <div className="flex flex-col justify-center">
-        <div className="flex flex-wrap justify-center gap-5 my-10 md:justify-around">
-          <div className="pt-2 text-gray-400">
-            <AmazonLogo />
-          </div>
-          <div className="text-gray-400">
-            <VerizonLogo />
-          </div>
-          <div className="text-gray-400">
-            <MicrosoftLogo />
-          </div>
-          <div className="pt-1 text-gray-400">
-            <NetflixLogo />
-          </div>
-          <div className="pt-2 text-gray-400">
-            <SonyLogo />
-          </div>
-        </div>
       </div>
     </>
   );

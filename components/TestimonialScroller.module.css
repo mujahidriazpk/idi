@@ -1,0 +1,36 @@
+/* components/TestimonialScroller.module.css */
+.scroller {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  @media (min-width: 768px) {
+  .scrollerInner {
+    display: flex;
+    width: calc(200%); /* Double the width for infinite scrolling */
+    animation: scroll 10s linear infinite;
+  }
+}
+  
+  .paused {
+    animation-play-state: paused !important;
+  }
+  
+  .testimonialContainer {
+    flex: 0 0 50%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-35%);
+    }
+  } 
+  
