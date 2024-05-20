@@ -1,8 +1,14 @@
 // pages/index.js
-import { useState } from 'react';
+import { useState,useRef} from 'react';
 import Container from "./container";
+import Recaptcha from './Recaptcha';
 
 const Form2 = (props) => {
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const recaptchaRef = useRef();
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,36 +28,57 @@ const Form2 = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://idiimage.com/wp-json/custom/v1/submit-form', {
+      if (!recaptchaValue) {
+        alert('Please complete the reCAPTCHA');
+        return;
+      }
+      const response_captcha = await fetch('/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          input_values: {
-            1: formData.name,  // Replace 1 with the actual field ID for 'name'
-            2: formData.email,
-            9: formData.number,
-            12: formData.documents_count,
-            13: formData.documents_type,
-            14: formData.image_enhancement,
-          }
-        }),
+        body: JSON.stringify({ recaptchaValue }),
       });
-      const data1 = await response.json();
-      if (response.ok) {
-        console.log(data1);
-        alert('Form submitted successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          number: '',
-          documents_count: '',
-          documents_type: '',
-          image_enhancement: '',
-        });
+  
+      const data = await response_captcha.json();
+  
+      if (data.success) {
+        //alert('Form submitted successfully');
+        const response = await fetch('https://idiimage.com/wp-json/custom/v1/submit-form', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                input_values: {
+                  1: formData.name,  // Replace 1 with the actual field ID for 'name'
+                  2: formData.email,
+                  9: formData.number,
+                  12: formData.documents_count,
+                  13: formData.documents_type,
+                  14: formData.image_enhancement,
+                }
+              }),
+            });
+            const data1 = await response.json();
+            if (response.ok) {
+              //console.log(data1);
+              alert('Form submitted successfully!');
+              recaptchaRef.current.reset();
+              setRecaptchaValue(null);
+              setFormData({
+                name: '',
+                email: '',
+                number: '',
+                documents_count: '',
+                documents_type: '',
+                image_enhancement: '',
+              });
+            } else {
+              alert('Failed to submit form');
+            }
       } else {
-        alert('Failed to submit form');
+        alert('reCAPTCHA verification failed');
       }
     } catch (error) {
       //console.error('Error submitting form:', error);
@@ -114,6 +141,7 @@ const Form2 = (props) => {
             </div>
           </div>
         </div>
+        <div className="mt-10"><Recaptcha recaptchaRef={recaptchaRef} onChange={handleRecaptchaChange} /></div>
         <div className="mt-10">
           <button type="submit"
             className="block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get Quote</button>
