@@ -18,20 +18,20 @@ export default function Footer() {
   return (
     <div className="relative bg-[#2164A1]">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-        <div>
+        <div className="grid grid-cols-1 gap-10 pt-10 mt-5 border-t border-gray-100 lg:grid-cols-2">
+        {/*<div>
             <h1 className="text-3xl text-white pb-2 px-4 font-thin">Services</h1>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-white rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                <Link key={index} href="/" className="w-full px-4 py-2 text-white rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
                   {item}
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="lg:col-span-2">
-            <h1 className="text-3xl text-white pb-2 font-thin">About IDI</h1>
-            <div className="max-w-md mt-4 text-white dark:text-white">
+            </div>*/}
+          <div className="lg:col-span-1">
+            <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">About IDI</h1>
+            <div className="max-w-md mt-4 text-white ">
               Innovative Document Imaging has been in business for over 23 years and is a world leader in document imaging. And document management solutions. IDI maintains two state-of-the-art conversion facilities in East Brunswick, NJ (headquarters) and a second facility in Shelton, CT. Our company mission is to supply the best service possible at a reasonable cost for the digital conversion of paper documents, newspapers, maps, books, bound materials, microfilm and microfiche.
             </div>
             {/*}
@@ -50,9 +50,10 @@ export default function Footer() {
               </a>
             </div>*/}
           </div>
-          <div className="lg:col-span-2">
-            <h1 className="text-3xl text-white pb-2 font-thin">Contact</h1>
-            <div className="max-w-md mt-4 pb-4 text-white dark:text-white border-b-2">
+          <div className="lg:col-span-1">
+            <div className="lg:max-w-md lg:w-2/3 lg:float-right">
+            <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">Contact</h1>
+            <div className="mt-4 pb-4 text-white border-b-2">
               <div className="flex">
                 <div className="flex items-center justify-start w-full lg:w-1/2">Phone:</div>
                 <div className="flex items-center justify-end w-full lg:w-1/2">732-613-7170</div>
@@ -66,7 +67,7 @@ export default function Footer() {
                 <div className="flex items-center justify-end w-full lg:w-1/2">info@idiimage.com</div>
               </div>
             </div>
-            <div className="max-w-md mt-4 pb-4 text-white dark:text-white border-b-2">
+            <div className="mt-4 pb-4 text-white border-b-2">
             <div className="flex">
                 <div className="flex items-center justify-start w-full lg:w-1/2">Address:</div>
               </div>
@@ -85,12 +86,13 @@ export default function Footer() {
                 <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/230+Long+Hill+Cross+Rd,+Shelton,+CT+06484/@41.287549,-73.1067487,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80aa4650cb415:0x6b9faaf87f99ace8!8m2!3d41.287545!4d-73.10456" >Directions</a></div>
               </div>
             </div>
+            </div>
           </div>
 
         </div>
         <div className="flex flex-wrap">
           <div className="items-center w-full lg:w-1/2">
-            <div className="my-10 text-xs text-left text-white dark:text-white">
+            <div className="my-10 text-xs text-left text-white">
               Copyright Innovative Document Imaging © {new Date().getFullYear()}. All Rights Reserved. Site By {" "}
               <a
                 href="https://grossiweb.com/"
@@ -99,7 +101,7 @@ export default function Footer() {
                 GrossiWeb
               </a>{" "}
             </div>
-            <div className="flex mt-0 space-x-5 text-white dark:text-white">
+            <div className="flex mt-0 space-x-5 text-white ">
               <a
                 href="http://www.bbb.org/new-jersey/business-reviews/document-imaging-and-scanning-service/innovative-document-imaging-llc-in-e-brunswick-nj-90086174"
                 target="_blank"
@@ -136,8 +138,8 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex items-center justify-end w-full lg:w-1/2">
-            <div className="">
-              <div className="flex mt-5 space-x-5 text-white dark:text-white">
+            {/*<div className="">
+              <div className="flex mt-5 space-x-5 text-white">
                 <a
                   href="https://www.facebook.com/IDI.Solutions/"
                   target="_blank"
@@ -167,7 +169,7 @@ export default function Footer() {
                   <Linkedin />
                 </a>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </Container>
@@ -227,7 +229,7 @@ const Backlink = () => {
       href="https://web3templates.com"
       target="_blank"
       rel="noopener"
-      className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
+      className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5">
       <svg
         width="20"
         height="20"

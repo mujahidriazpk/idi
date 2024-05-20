@@ -139,7 +139,7 @@ const Home = () => {
       </Container>
       <Benefits data={benefitOne} />
       <Container className="pb-0">
-        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
+        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           All Services Include</div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div className="lg:col-span-2 xl:col-auto">
@@ -182,14 +182,14 @@ const Home = () => {
       </Container>
       <TestimonialScroller />
       <Container className="pb-0">
-        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
+        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           We Digitized the Constitution of the United States</div>
         <div className="flex w-full flex-col text-center">We Will Use the Same State of the Art Technology to Preserve Your Precious Memories</div>
         <div className="my-4 flex-col text-center"><a href="/" className="bg-[#2164A1] w-auto px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
           Learn More
         </a></div>
       </Container>
-      <Container className="pb-0">
+      <Container className="pb-0 pt-20">
         <div className="grid gap-24 lg:grid-cols-2 xl:grid-cols-4 items-center">
           <div className="flex-row">
             <div className="flex rounded-full bg-[#2164A1] aspect-w-16 aspect-h-16 h-60 m-auto">
@@ -227,7 +227,6 @@ const Home = () => {
       </Container>
       <Form2 />
       <Footer />
-      <PopupWidget />
     </>
   );
 }

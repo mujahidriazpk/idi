@@ -15,7 +15,7 @@ const TestimonialScroller = () => {
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     ><Container className="pb-0">
-    <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+    <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
       Trusted by the biggest and the best</div>
       </Container>
       <div className={`${styles.scrollerInner} ${isHovered ? styles.paused : ''}`}>

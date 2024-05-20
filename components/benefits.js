@@ -13,7 +13,7 @@ const Benefits = (props) => {
               }`}>
             <div>
               <div className="flex flex-col w-full">
-                <div className="flex w-full flex-col text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-4xl">
+                <div className="flex w-full py-10 flex-col text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-3xl lg:py-0">
                   {data.title}
                 </div>
 
@@ -62,10 +62,10 @@ function Benefit(props) {
         </svg>
         </div>
         <div>
-          <h4 className="text-xl font-medium text-white-800 dark:text-white-200">
+          <h4 className="text-xl font-medium text-white-800">
             {props.title}
           </h4>
-          <p className="text-white-500 dark:text-white-400">
+          <p className="text-white-500">
             {props.children}
           </p>
         </div>
