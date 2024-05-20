@@ -15,7 +15,7 @@ import Container from "../components/container";
 import { benefitOne, benefitTwo } from "../components/data";
 import Benefits from "../components/benefits";
 import Form from "../components/form";
-import Form2 from "../components/form2";
+import Form2 from "../components/form_quote";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import PopupWidget from "../components/popupWidget";
@@ -225,7 +225,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Form />
       <Form2 />
       <Footer />
       <PopupWidget />
