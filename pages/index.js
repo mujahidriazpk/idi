@@ -39,7 +39,7 @@ const Home = () => {
           name="description"
           content="Nextly is a free landing page template built with next.js & Tailwind CSS"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Navbar />
@@ -74,7 +74,7 @@ const Home = () => {
       </div>
       <Container>
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4x">
-          Why you need this?</div>
+        Benefits of Litigation Support</div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-col justify-between text-center w-full h-full bg-gray-100 px-14 py-14">
@@ -140,7 +140,7 @@ const Home = () => {
       <Benefits data={benefitOne} />
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
-          All Services Include</div>
+          Services Include</div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-col justify-center text-center w-full h-full px-14 rounded-none py-16 bg-[#2164A1]">
@@ -151,7 +151,7 @@ const Home = () => {
                 placeholder="blur"
                 className="m-auto"
               />
-              <div className="text-white text-center text-lg">All Services Include</div>
+              <div className="text-white text-center text-lg">HIPAA Compliant</div>
             </div>
           </div>
           <div className="">
@@ -180,7 +180,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <TestimonialScroller />
+      {/*<TestimonialScroller />
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           We Digitized the Constitution of the United States</div>
@@ -225,6 +225,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      */}
       <Form2 />
       <Footer />
     </>

@@ -1,7 +1,4 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
@@ -23,7 +20,7 @@ const benefitOne = {
     },
     {
       title: "",
-      desc: "Trusted with digitizing priceless documents such as the United States Constitution",
+      desc: "Trusted with Priceless Documents",
       icon: <CheckCircleIcon />,
     },
     {

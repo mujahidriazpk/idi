@@ -11,7 +11,7 @@ const Hero = () => {
               Highest Quality • Fastest Turnaround • Most Affordable
             </div>
             <div className="text-5xl text-left text-white font-extralight pb-12">
-              Litigation Document Scanning Services in the World.
+            Litigation Support Solutions in the World
             </div>
           </div>
         </Container>

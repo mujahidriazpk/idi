@@ -92,12 +92,12 @@ const TestimonialScroller = () => {
 };
 function Avatar(props) {
     return (
-      <div className="flex items-center mt-8">
-        <div className="justify-start">
+      <div className="w-full items-center mt-8">
+        <div className="float-left w-1/3">
           <div className="text-lg font-medium">{props.name}</div>
           <div className=" text-white text-xs border-b-2 pb-2">{props.title}</div>
         </div>
-        <div className="flex-shrink-0 overflow-hidden flex justify-end">
+        <div className="float-right w-8/12 flex justify-end">
           <Image
             src={props.image}
             width="auto"

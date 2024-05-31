@@ -18,8 +18,8 @@ export default function Footer() {
   return (
     <div className="relative bg-[#2164A1]">
       <Container>
-        <div className="grid grid-cols-1 gap-10 pt-10 mt-5 border-t border-gray-100 lg:grid-cols-2">
-        {/*<div>
+        <div className="grid max-w-screen-xl grid-cols-1 gap-5 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+          {/*<div>
             <h1 className="text-3xl text-white pb-2 px-4 font-thin">Services</h1>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
@@ -34,58 +34,52 @@ export default function Footer() {
             <div className="max-w-md mt-4 text-white ">
               Innovative Document Imaging has been in business for over 23 years and is a world leader in document imaging. And document management solutions. IDI maintains two state-of-the-art conversion facilities in East Brunswick, NJ (headquarters) and a second facility in Shelton, CT. Our company mission is to supply the best service possible at a reasonable cost for the digital conversion of paper documents, newspapers, maps, books, bound materials, microfilm and microfiche.
             </div>
-            {/*}
-            <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44">
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
-            </div>*/}
           </div>
           <div className="lg:col-span-1">
-            <div className="lg:max-w-md lg:w-2/3 lg:float-right">
-            <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">Contact</h1>
-            <div className="mt-4 pb-4 text-white border-b-2">
-              <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">Phone:</div>
-                <div className="flex items-center justify-end w-full lg:w-1/2">732-613-7170</div>
-              </div>
-              <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">Fax:</div>
-                <div className="flex items-center justify-end w-full lg:w-1/2">732-613-2788</div>
-              </div>
-              <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">Email:</div>
-                <div className="flex items-center justify-end w-full lg:w-1/2">info@idiimage.com</div>
-              </div>
+            <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">Our Parent Company</h1>
+            <div className="max-w-md mt-4 text-white ">
+              Innovative Document Imaging (IDI) has been a world leader in document imaging and document management solutions for the past 20+ years, with state-of-the-art conversion facilities in NJ and CT. IDI has completed projects for The Library of Congress, The Smithsonian, The British Library, IRS, University of London, Yale, Harvard, and Academy of Motion Picture Arts and Sciences, to name a few.
+              <Link href="www.idiimage.com" className="clear-both " >
+                <br />www.idiimage.com
+              </Link>
             </div>
-            <div className="mt-4 pb-4 text-white border-b-2">
-            <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">Address:</div>
-              </div>
-              <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
-                410 New Brunswick Ave.<br />
-								East Brunswick, NJ, 08816<br /><br />
+          </div>
+          <div className="lg:col-span-1">
+            <div >
+              <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">Contact</h1>
+              <div className="mt-4 pb-4 text-white border-b-2">
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">Phone:</div>
+                  <div className="flex items-center justify-end w-full lg:w-1/2"><Link href="tel:732-613-7170" >732-613-7170</Link></div>
                 </div>
-                <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/410+New+Brunswick+Ave,+East+Brunswick,+NJ+08816/@40.4164806,-74.4127742,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c57f3b163a39:0x60446978ef92d3ef!8m2!3d40.4164806!4d-74.4105855" >Directions</a></div>
-              </div>
-              <div className="flex">
-                <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
-                230 Long Hill Cross Road.<br />
-								Shelton, CT 06484<br /><br />
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">Fax:</div>
+                  <div className="flex items-center justify-end w-full lg:w-1/2">732-613-2788</div>
                 </div>
-                <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/230+Long+Hill+Cross+Rd,+Shelton,+CT+06484/@41.287549,-73.1067487,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80aa4650cb415:0x6b9faaf87f99ace8!8m2!3d41.287545!4d-73.10456" >Directions</a></div>
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">Email:</div>
+                  <div className="flex items-center justify-end w-full lg:w-1/2"><Link href="mailto:IndexingDigital@idiimage.com" >IndexingDigital@idiimage.com</Link></div>
+                </div>
               </div>
-            </div>
+              <div className="mt-4 pb-4 text-white border-b-2">
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">Address:</div>
+                </div>
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
+                    410 New Brunswick Ave.<br />
+                    East Brunswick, NJ, 08816<br /><br />
+                  </div>
+                  <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/410+New+Brunswick+Ave,+East+Brunswick,+NJ+08816/@40.4164806,-74.4127742,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c57f3b163a39:0x60446978ef92d3ef!8m2!3d40.4164806!4d-74.4105855" >Directions</a></div>
+                </div>
+                <div className="flex">
+                  <div className="flex items-center justify-start w-full lg:w-1/2">United States<br />
+                    230 Long Hill Cross Road.<br />
+                    Shelton, CT 06484<br /><br />
+                  </div>
+                  <div className="flex items-center justify-end w-full lg:w-1/2"><a href="https://www.google.com/maps/place/230+Long+Hill+Cross+Rd,+Shelton,+CT+06484/@41.287549,-73.1067487,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80aa4650cb415:0x6b9faaf87f99ace8!8m2!3d41.287545!4d-73.10456" >Directions</a></div>
+                </div>
+              </div>
             </div>
           </div>
 

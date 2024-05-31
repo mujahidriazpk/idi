@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Container from "./container";
 
@@ -22,13 +23,16 @@ const Benefits = (props) => {
                 </div>
               </div>
 
-              <div className="w-full">
+              <div className="w-full pb-4">
                 {data.bullets.map((item, index) => (
                   <Benefit key={index} title={item.title} icon={item.icon}>
                     {item.desc}
                   </Benefit>
                 ))}
               </div>
+              <Link href="#quote_form" className="px-4 py-2 mt-8 text-sm uppercase text-[#2164A1] bg-gray-100 w-auto font-semibold">
+                Get Quote
+              </Link>
             </div>
           </div>
           <div
@@ -57,9 +61,9 @@ function Benefit(props) {
     <>
       <div className="flex items-start space-x-3 border-b-2 py-4">
         <div className="flex items-center justify-center flex-shrink-0 w-7 h-7 ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
         </div>
         <div>
           <h4 className="text-xl font-medium text-white-800">
