@@ -37,7 +37,7 @@ const Home = () => {
         <title>Innovative Document Imaging</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Innovative Document Imaging is a world leader in document imaging and document management solutions. IDI maintains a state-of-the-art document conversion facility in East Brunswick, New Jersey. Our company mission is to supply the best service possible at a reasonable"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
