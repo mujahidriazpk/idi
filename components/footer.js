@@ -32,14 +32,14 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">About IDI</h1>
             <div className="max-w-md mt-4 text-white ">
-              Innovative Document Imaging has been in business for over 23 years and is a world leader in document imaging. And document management solutions. IDI maintains two state-of-the-art conversion facilities in East Brunswick, NJ (headquarters) and a second facility in Shelton, CT. Our company mission is to supply the best service possible at a reasonable cost for the digital conversion of paper documents, newspapers, maps, books, bound materials, microfilm and microfiche.
+            <strong>Indexing Digital Information</strong> is the premier provider of litigation services for Bibliographic Coding and Data Capture/Indexing. Our coding and data capture processes are enhanced by a blend of machine learning and automation, ensuring efficient and accurate results.  We specialize in offering robust litigation support and cutting-edge technology solutions to law firms and corporations.
             </div>
           </div>
           <div className="lg:col-span-1">
             <h1 className="font-bold leading-snug tracking-tight text-3xl text-white pb-2">Our Parent Company</h1>
             <div className="max-w-md mt-4 text-white ">
-              Innovative Document Imaging (IDI) has been a world leader in document imaging and document management solutions for the past 20+ years, with state-of-the-art conversion facilities in NJ and CT. IDI has completed projects for The Library of Congress, The Smithsonian, The British Library, IRS, University of London, Yale, Harvard, and Academy of Motion Picture Arts and Sciences, to name a few.
-              <Link href="www.idiimage.com" className="clear-both " >
+            <strong>Innovative Document Imaging (IDI)</strong> has been a world leader in document imaging and document management solutions for the past 20+ years, with state-of-the-art conversion facilities in NJ and CT. IDI has completed projects for The Library of Congress, The Smithsonian, The British Library, IRS, University of London, Yale, Harvard, and Academy of Motion Picture Arts and Sciences, to name a few.
+            <Link href="www.idiimage.com" className="clear-both " >
                 <br />www.idiimage.com
               </Link>
             </div>
