@@ -1,18 +1,44 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
+
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-wrap bg-[url('/img/hero_bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="flex flex-wrap bg-[url('/img/hero_bg1.png')] bg-no-repeat bg-center bg-cover font-sans">
         <Container>
-          <div className="flex flex-col justify-end h-96">
-            <div className="text-3xl text-left text-white py-3">
-              Highest Quality • Fastest Turnaround • Most Affordable
+          <div className="w-full h-screen flex flex-col justify-around">
+            <div className="flex flex-col justify-center w-full md:w-1/2">
+
+              <div className="text-5xl text-left text-white font-extralight mb-5 mt-52 ">
+                Litigation Document Scanning & Indexing Services.
+              </div>
+              <div className="flex gap-x-10">
+                <img src="/img/a-rating.png" className="w-14 h-full" />
+                <img src="/img/verified.png" className="w-14 h-full" />
+              </div>
+
             </div>
-            <div className="text-5xl text-left text-white font-extralight pb-12">
-            Litigation Support Solutions in the World
+            
+            
+            <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-5 uppercase text-center">
+              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+                <p>23+ years</p>
+                <p>of experience</p>
+              </div>
+
+              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+                <p>Digitizing priceless</p> 
+                <p>documents</p>
+              </div>
+
+              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+                <p>unparalleled quality,</p> 
+                <p>speed & value</p>
+              </div>
             </div>
+
+
           </div>
         </Container>
       </div>
