@@ -84,7 +84,8 @@ const Form2 = (props) => {
   };
 
   return (
-    <Container className='py-20'>
+    <div className="flex flex-wrap bg-gray-100 mt-14">
+    <Container className=''>
       <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
         Request a quote</div>
       <form id="quote_form" method="POST" className="mx-auto" onSubmit={handleSubmit}>
@@ -145,6 +146,7 @@ const Form2 = (props) => {
         </div>
       </form>
     </Container>
+    </div>
   );
 }
 export default Form2;

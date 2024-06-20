@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import heroImg from "../public/img/hero.png";
 import files from "../public/img/files.png";
-import bird from "../public/img/bird.jpg";
+import bird from "../public/img/bird.png";
 import hands from "../public/img/hands.png";
 import lock from "../public/img/lock.png";
 import Head from "next/head";
@@ -44,8 +45,60 @@ const Home = () => {
 
       <Navbar />
       <Hero />
-      <LogoScroller />
-      
+      {/*<LogoScroller />*/}
+
+      <Container className="flex flex-wrap p-14">
+        <div className="text-center m-auto text-base w-2/3 leading-normal text-[#333333]">
+          For law firms, efficient document management is crucial. Our legal document scanning service converts paper records into a text-searchable digital archive, improving security and accessibility.
+        </div>
+        <div className="text-center m-auto text-base w-2/3 leading-normal font-bold py-5">
+
+          With expertise in legal scanning and litigation support, we enhance your law firm’s document management.
+        </div>
+        <div className="text-center m-auto text-base w-2/3 leading-normal font-bold py-5">
+          <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+            Get FREE ESTIMATE
+          </Link>
+        </div>
+      </Container>
+      <div className="flex flex-wrap bg-[url('/img/library.png')] bg-no-repeat bg-center bg-cover">
+        <Container>
+          <div className="flex flex-col justify-center h-96">
+            <div className="text-3xl text-center m-auto my-0 w-2/3 leading-normal  text-white">
+              Expertise in Legal Document Management
+            </div>
+            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+              Indexing Digital Information has been in business for over 23 years and is a world leader in Legal Document Management. And Secure Scanning Services
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className="flex flex-wrap bg-[url('/img/book.png')] bg-no-repeat bg-center bg-cover my-2">
+        <Container>
+          <div className="flex flex-col justify-center h-96">
+            <div className="text-3xl text-center m-auto my-0 w-2/3 leading-normal  text-white">
+              Trusted with Digitizing Priceless Documents
+            </div>
+            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+              We have been entrusted with priceless, one of a kind, documents such as the US Constitution and other historical works so you can be confident that your files will be handled and maintained with the level of care and accountability.
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className="flex flex-wrap bg-[url('/img/jet.png')] bg-no-repeat bg-center bg-cover">
+        <Container>
+          <div className="flex flex-col justify-center h-96">
+            <div className="text-3xl text-center m-auto my-0 pb-5 w-2/3 leading-normal  text-white">
+              We provide Unmatched Quality, Speed, and Value
+            </div>
+            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+              <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+                Get FREE ESTIMATE
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </div>
       <div className="flex flex-wrap bg-[#F5F6F8]">
         <Container className="flex flex-wrap py-0">
           <div className="flex items-center w-full lg:w-1/2">
@@ -62,19 +115,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Image
-            src={files}
-            
-            alt="Files Images"
-            loading="eager"
-            placeholder="blur"
-            className="w-full h-auto m-auto"
-          />
         </Container>
       </div>
       <Container>
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4x">
-        Benefits of Litigation Support</div>
+          Why you need this?</div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-col justify-between text-center w-full h-full bg-gray-100 px-14 py-14">
@@ -112,8 +157,8 @@ const Home = () => {
         </div>
       </Container>
       <Container className="py-0 pb-8">
-        <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 justify-center">
-          <div className="lg:col-span-2 xl:col-auto">
+        <div className="flex gap-10  justify-center">
+          <div className="w-1/3">
             <div className="flex flex-col justify-between text-center w-full h-full bg-gray-100 px-14 py-14">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 m-auto inline-block text-red-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
@@ -124,7 +169,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="w-1/3">
             <div className="flex flex-col justify-between text-center w-full h-full bg-gray-100 px-14 py-14">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 m-auto inline-block text-red-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -137,13 +182,14 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Benefits data={benefitOne} />
+      {/*<Benefits data={benefitOne} />*/}
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
-          Services Include</div>
+          All Services Include
+        </div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div className="lg:col-span-2 xl:col-auto">
-            <div className="flex flex-col justify-center text-center w-full h-full px-14 rounded-none py-16 bg-[#2164A1]">
+            <div className="flex flex-col justify-center text-center w-full h-full px-14 rounded-none py-16 bg-gray-100">
               <Image
                 src={bird}
                 alt="Files Images"
@@ -151,11 +197,11 @@ const Home = () => {
                 placeholder="blur"
                 className="m-auto"
               />
-              <div className="text-white text-center text-lg">HIPAA Compliant</div>
+              <div className="text-[#333333] text-center text-lg font-bold">HIPAA Compliant</div>
             </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-center w-full h-full px-14 rounded-none py-16 bg-[#2164A1]">
+            <div className="flex flex-col justify-center w-full h-full px-14 rounded-none py-16 bg-gray-100">
               <Image
                 src={hands}
                 alt="Files Images"
@@ -163,11 +209,11 @@ const Home = () => {
                 placeholder="blur"
                 className="m-auto"
               />
-              <div className="text-white text-center text-lg">NDA Protection</div>
+              <div className="text-[#333333] text-center text-lg font-bold">NDA Protection</div>
             </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-center w-full h-full px-14 rounded-none py-16 bg-[#2164A1]">
+            <div className="flex flex-col justify-center w-full h-full px-14 rounded-none py-16 bg-gray-100">
               <Image
                 src={lock}
                 alt="Files Images"
@@ -175,12 +221,14 @@ const Home = () => {
                 placeholder="blur"
                 className="m-auto"
               />
-              <div className="text-white text-center text-lg">Encryption Secured</div>
+              <div className="text-[#333333] text-center text-lg font-bold">Encryption Secured</div>
             </div>
           </div>
         </div>
       </Container>
-      {/*<TestimonialScroller />
+      {/*<TestimonialScroller />*/}
+      <Form2 />
+      {/*
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           We Digitized the Constitution of the United States</div>
@@ -189,7 +237,11 @@ const Home = () => {
           Learn More
         </a></div>
       </Container>
-      <Container className="pb-0 pt-20">
+      */}
+      <Container >
+      <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
+        Additional services
+        </div>
         <div className="grid gap-24 lg:grid-cols-2 xl:grid-cols-4 items-center">
           <div className="flex-row">
             <div className="flex rounded-full bg-[#2164A1] aspect-w-16 aspect-h-16 h-60 m-auto">
@@ -225,8 +277,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      */}
-      <Form2 />
       <Footer />
     </>
   );
