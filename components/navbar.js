@@ -112,7 +112,7 @@ const Navbar = () => {
             <p>5 Star Google Rating</p>
           </div>
           <div className="uppercase flex flex-col grey clear-both w-auto text-sm items-center text-[#BEBDBD] font-semibold">
-            <Link href="tel:1-800-380-9058">1-800-380-9058</Link>
+            <Link href="tel:1-800-380-9058" className="text-base">1-800-380-9058</Link>
             <div className={"h-[1px] border-b-[1px] w-full border-primary"} />
             <p>Free Consultation</p>
           </div>

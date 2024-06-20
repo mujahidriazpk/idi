@@ -14,8 +14,8 @@ const Hero = () => {
                 Litigation Document Scanning & Indexing Services.
               </div>
               <div className="flex gap-x-10">
-                <img src="/img/a-rating.png" className="w-14 h-full" />
-                <img src="/img/verified.png" className="w-14 h-full" />
+                <img src="/img/a-rating.png" className="w-20 h-full" />
+                <img src="/img/footerlogo2.png" className="w-16 h-full" />
               </div>
 
             </div>

@@ -115,7 +115,6 @@ export default function Footer() {
                   src={footerlogo2}
                   height="37"
                   alt="Avatar"
-                  placeholder="blur"
                 />
               </a>
               <a

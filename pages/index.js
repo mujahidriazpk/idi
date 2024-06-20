@@ -51,18 +51,19 @@ const Home = () => {
       <Hero />
       {/*<LogoScroller />*/}
 
-      <Container className="flex flex-wrap p-14">
-        <div className="text-center m-auto text-base w-2/3 leading-normal text-[#333333]">
-          For law firms, efficient document management is crucial. Our legal document scanning service converts paper records into a text-searchable digital archive, improving security and accessibility.
-        </div>
-        <div className="text-center m-auto text-base w-2/3 leading-normal font-bold py-5">
-
-          With expertise in legal scanning and litigation support, we enhance your law firm’s document management.
-        </div>
-        <div className="text-center m-auto text-base w-2/3 leading-normal font-bold py-5">
-          <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
-            Get FREE ESTIMATE
-          </Link>
+      <Container className="flex flex-wrap">
+        <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14">
+          <div className="text-[#333333]">
+            For law firms, efficient document management is crucial. Our legal document scanning service converts paper records into a text-searchable digital archive, improving security and accessibility.
+          </div>
+          <div className="font-bold py-5">
+            With expertise in legal scanning and litigation support, we enhance your law firm’s document management.
+          </div>
+          <div className="font-bold py-5">
+            <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+              Get FREE ESTIMATE
+            </Link>
+          </div>
         </div>
       </Container>
       <div className="flex flex-wrap bg-[url('/img/library.png')] bg-no-repeat bg-center bg-cover">
@@ -104,20 +105,16 @@ const Home = () => {
         </Container>
       </div>
       <div className="flex flex-wrap bg-[#F5F6F8]">
-        <Container className="flex flex-wrap py-0">
+        <Container className="flex flex-wrap py-14 w-full md:w-2/3">
           <div className="flex items-center w-full lg:w-1/2">
-            <div className="max-w-2xl mb-8">
               <div className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
                 What is<br />Litigation Scanning?
               </div>
-            </div>
           </div>
           <div className="flex items-center justify-center w-full lg:w-1/2">
-            <div className="">
-              <div className="py-20 text-base leading-normal text-gray-500">
+              <div className="py-5 text-base leading-normal text-gray-500">
                 Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
               </div>
-            </div>
           </div>
         </Container>
       </div>
