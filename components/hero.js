@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="w-full h-screen flex flex-col justify-around">
             <div className="flex flex-col justify-center w-full md:w-1/2">
 
-              <div className="text-5xl text-left text-white font-extralight mb-5 mt-52 ">
+              <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52 ">
                 Litigation Document Scanning & Indexing Services.
               </div>
               <div className="flex gap-x-10">
