@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="w-full absolute">
       <div className=" bg-[#141414] w-full text-white flex justify-center uppercase text-xs md:text-sm lg:text-base">
-        <div className="flex w-full md:w-1/2 justify-around items-center">
+        <div className="flex w-full lg:w-1/2 justify-around items-center">
           <p>HIGHEST QUALITY</p>
           <Image src={require("../public/img/dot.png")} />
           <p>Fastest Turnaround</p>
