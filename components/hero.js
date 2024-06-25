@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div className="flex flex-wrap bg-[url('/img/hero_bg1.png')] bg-no-repeat bg-center bg-cover font-sans">
-        <Container>
+        <Container className='pb-0'>
           <div className="w-full h-screen flex flex-col justify-around">
             <div className="flex flex-col justify-center w-full md:w-1/2">
 
