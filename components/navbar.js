@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"
-import { Disclosure } from "@headlessui/react";
+import Logo from "../public/img/logo.svg"
 
 const Navbar = () => {
   const navigation = [
@@ -26,11 +26,10 @@ const Navbar = () => {
         {/* Logo  */}
         <Link href="/">
           <Image
-            src="/img/logo.png"
+            src={Logo}
             alt="logo"
-            width="300"
-            height="100"
-            className="w-auto"
+            width={120}
+            height={100}
           />
         </Link>
 
