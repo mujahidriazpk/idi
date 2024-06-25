@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="w-full h-screen flex flex-col justify-around">
             <div className="flex flex-col justify-center w-full md:w-1/2">
 
-              <div className="text-5xl text-left text-white font-extralight mb-5 mt-52 ">
+              <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52 ">
                 Litigation Document Scanning & Indexing Services.
               </div>
               <div className="flex gap-x-10">
@@ -21,18 +21,18 @@ const Hero = () => {
             </div>
             
             
-            <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-5 uppercase text-center">
-              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+            <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-1 uppercase text-center mt-10 md:mt-none">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
                 <p>23+ years</p>
                 <p>of experience</p>
               </div>
 
-              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
                 <p>Digitizing priceless</p> 
                 <p>documents</p>
               </div>
 
-              <div className="p-7 bg-opacity-50 bg-white rounded-md w-64">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
                 <p>unparalleled quality,</p> 
                 <p>speed & value</p>
               </div>
