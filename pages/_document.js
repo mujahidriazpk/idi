@@ -1,4 +1,4 @@
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <GoogleTagManager gtmId="GTM-PWSTJFZS" />
+        {/* <GoogleTagManager gtmId="GTM-PWSTJFZS" /> */}
         <Head>
           {/* <Link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
