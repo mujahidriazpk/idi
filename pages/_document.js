@@ -5,13 +5,14 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <GoogleTagManager gtmId="GTM-PWSTJFZS" />
         <Head>
-          <Link
+          {/* <Link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
             rel="stylesheet"
-          />
+          /> */}
           {/* GTM Script */}
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -21,13 +22,13 @@ class MyDocument extends Document {
                 })(window,document,'script','dataLayer','GTM-PWSTJFZS');
               `,
             }}
-          />
+          /> */}
         </Head>
         <body>
-        <noscript>
+        {/* <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWSTJFZS"
             height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe>
-          </noscript>
+          </noscript> */}
           <Main />
           <NextScript />
         </body>
