@@ -69,10 +69,10 @@ const Home = () => {
       <div className="flex flex-wrap bg-[url('/img/library.png')] bg-no-repeat bg-center bg-cover">
         <Container>
           <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 w-2/3 leading-normal  text-white">
+            <div className="text-3xl text-center m-auto my-0 w-full md:w-2/3 leading-normal  text-white">
               Expertise in Legal Document Management
             </div>
-            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
               Indexing Digital Information has been in business for over 23 years and is a world leader in Legal Document Management. And Secure Scanning Services
             </div>
           </div>
@@ -81,10 +81,10 @@ const Home = () => {
       <div className="flex flex-wrap bg-[url('/img/book.png')] bg-no-repeat bg-center bg-cover my-2">
         <Container>
           <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 w-2/3 leading-normal  text-white">
+            <div className="text-3xl text-center m-auto my-0 w-full md:w-2/3 leading-normal  text-white">
               Trusted with Digitizing Priceless Documents
             </div>
-            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
               We have been entrusted with priceless, one of a kind, documents such as the US Constitution and other historical works so you can be confident that your files will be handled and maintained with the level of care and accountability.
             </div>
           </div>
@@ -93,10 +93,10 @@ const Home = () => {
       <div className="flex flex-wrap bg-[url('/img/jet.png')] bg-no-repeat bg-center bg-cover">
         <Container>
           <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 pb-5 w-2/3 leading-normal  text-white">
+            <div className="text-3xl text-center m-auto my-0 pb-5 w-full md:w-2/3 leading-normal  text-white">
               We provide Unmatched Quality, Speed, and Value
             </div>
-            <div className="text-center m-auto my-0 text-base w-1/2 leading-normal  text-white">
+            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
               <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
                 Get FREE ESTIMATE
               </Link>

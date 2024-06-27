@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="flex flex-wrap bg-[url('/img/hero_bg1.png')] bg-no-repeat bg-center bg-cover font-sans">
         <Container className='pb-0'>
-          <div className="w-full h-screen flex flex-col justify-around">
+          <div className="w-full min-h-screen flex flex-col justify-around">
             <div className="flex flex-col justify-center w-full md:w-1/2">
 
               <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52 ">
@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             
             
-            <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-1 uppercase text-center mt-10 md:mt-none">
+            <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-1 uppercase text-center mt-10 md:mt-none mb-5 md:mb-none">
               <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
                 <p>23+ years</p>
                 <p>of experience</p>
