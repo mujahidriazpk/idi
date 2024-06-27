@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Innovative Document Imaging</title>
+        <title>Litigation Scanning Services | Indexing Digital Information</title>
         <meta
           name="description"
           content="Innovative Document Imaging is a world leader in document imaging and document management solutions. IDI maintains a state-of-the-art document conversion facility in East Brunswick, New Jersey. Our company mission is to supply the best service possible at a reasonable"
