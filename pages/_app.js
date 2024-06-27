@@ -5,8 +5,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <GoogleTagManager gtmId="GTM-PWSTJFZS" />
       <Component {...pageProps} />
+      <GoogleTagManager gtmId="GTM-PWSTJFZS" />
     </ThemeProvider>
   );
 }
