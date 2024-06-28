@@ -2,16 +2,40 @@
 import { useState, useRef } from 'react';
 import Container from "./container";
 import Recaptcha from './Recaptcha';
-import { twMerge } from 'tailwind-merge';
 
 const Form2 = (props) => {
   const [recaptchaValue, setRecaptchaValue] = useState(null);
-
-  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [recaptchaVerified, setRecaptchaVerified] = useState(false);
   const recaptchaRef = useRef();
+
   const handleRecaptchaChange = (value) => {
     setRecaptchaValue(value);
+    (async () => {
+      try {
+        if (!value) {
+          alert('Please complete the reCAPTCHA');
+          return;
+        }
+        const response_captcha = await fetch('/api/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ recaptchaValue: value }),
+        });
+
+        if (response_captcha.status === 200) {
+          setRecaptchaVerified(true)
+        } else {
+          setRecaptchaVerified(false)
+        }
+      } catch (err) {
+        setRecaptchaVerified(false)
+        alert("Something went wrong")
+      }
+    })()
   };
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,6 +43,7 @@ const Form2 = (props) => {
     documents_type: '',
     image_enhancement: '',
   });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -27,50 +52,10 @@ const Form2 = (props) => {
     });
   };
 
-  const verifyCaptcha = async (e) => {
-    try{
-      if (!recaptchaValue) {
-        alert('Please complete the reCAPTCHA');
-        return;
-      }
-      const response_captcha = await fetch('/api/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ recaptchaValue }),
-      });
-
-      // const data = await response_captcha.json();
-      if (response_captcha.status === 200) {
-        setCaptchaVerified(true);
-      } else {
-        setCaptchaVerified(false);
-      }
-    } catch {
-      setCaptchaVerified(false);
-      alert('An error occurred. Please try again.');
-    }
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // if (!recaptchaValue) {
-      //   alert('Please complete the reCAPTCHA');
-      //   return;
-      // }
-      // const response_captcha = await fetch('/api/submit', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({ recaptchaValue }),
-      // });
-
-      // const data = await response_captcha.json();
-
-      if (captchaVerified) {
+      if (recaptchaVerified) {
         //alert('Form submitted successfully');
         const response = await fetch('https://idiimage.com/wp-json/custom/v1/submit-form', {
           method: 'POST',
@@ -103,8 +88,6 @@ const Form2 = (props) => {
         } else {
           alert('Failed to submit form');
         }
-      } else {
-        alert('reCAPTCHA verification failed');
       }
     } catch (error) {
       //console.error('Error submitting form:', error);
@@ -143,15 +126,15 @@ const Form2 = (props) => {
             <div>
               <label htmlFor="documents_type" className="block text-sm font-semibold leading-6 text-gray-900">What Type of Documents?</label>
               <div className="relative mt-2.5">
-              <select name="documents_type" id="documents_type" value={formData.documents_type} onChange={handleChange} required className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option value="Document Scanning">Document Scanning</option>
-              <option value="Coding and Indexing">Coding and Indexing</option>
-              <option value="Document Review">Document Review</option>
-              <option value="MicroFilm & MicroFiche">MicroFilm & MicroFiche</option>
-              <option value="Video & Film">Video & Film</option>
-              <option value="Other Media">Other Media</option>
-              <option value="Free Sample Review">Free Sample Review</option>
-              </select>
+                <select name="documents_type" id="documents_type" value={formData.documents_type} onChange={handleChange} required className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  <option value="Document Scanning">Document Scanning</option>
+                  <option value="Coding and Indexing">Coding and Indexing</option>
+                  <option value="Document Review">Document Review</option>
+                  <option value="MicroFilm & MicroFiche">MicroFilm & MicroFiche</option>
+                  <option value="Video & Film">Video & Film</option>
+                  <option value="Other Media">Other Media</option>
+                  <option value="Free Sample Review">Free Sample Review</option>
+                </select>
               </div>
             </div>
             <div>
@@ -170,13 +153,16 @@ const Form2 = (props) => {
           </div>
           <div className="mt-10"><Recaptcha recaptchaRef={recaptchaRef} onChange={handleRecaptchaChange} /></div>
           <div className="mt-10">
-            <button type="button"
-              onClick={async(e) => {await verifyCaptcha(); handleSubmit(e)}}
-              // disabled={!recaptchaValue}
-              className={twMerge("block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", !recaptchaValue ? "hover:disabled:cursor-not-allowed opacity-50":null)}
-            >
-              Get Quote
-            </button>
+            {recaptchaVerified ?
+              (<button type="submit"
+                className="block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get Quote
+              </button>
+              ) : (
+                <button type='button' id="verification_failed" onClick={() => alert("reCAPTCHA verification failed")} className="block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get Quote</button>
+              )
+            }
           </div>
         </form>
       </Container>
