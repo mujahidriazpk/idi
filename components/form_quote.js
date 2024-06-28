@@ -78,6 +78,7 @@ const Form2 = (props) => {
           alert('Form submitted successfully!');
           recaptchaRef.current.reset();
           setRecaptchaValue(null);
+          setRecaptchaVerified(false);
           setFormData({
             name: '',
             email: '',
