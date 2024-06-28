@@ -2,9 +2,12 @@
 import { useState, useRef } from 'react';
 import Container from "./container";
 import Recaptcha from './Recaptcha';
+import { twMerge } from 'tailwind-merge';
 
 const Form2 = (props) => {
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+
+  const [captchaVerified, setCaptchaVerified] = useState(false);
   const recaptchaRef = useRef();
   const handleRecaptchaChange = (value) => {
     setRecaptchaValue(value);
@@ -24,9 +27,8 @@ const Form2 = (props) => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
+  const verifyCaptcha = async (e) => {
+    try{
       if (!recaptchaValue) {
         alert('Please complete the reCAPTCHA');
         return;
@@ -39,9 +41,36 @@ const Form2 = (props) => {
         body: JSON.stringify({ recaptchaValue }),
       });
 
-      const data = await response_captcha.json();
+      // const data = await response_captcha.json();
+      if (response_captcha.status === 200) {
+        setCaptchaVerified(true);
+      } else {
+        setCaptchaVerified(false);
+      }
+    } catch {
+      setCaptchaVerified(false);
+      alert('An error occurred. Please try again.');
+    }
+  }
 
-      if (data.success) {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // if (!recaptchaValue) {
+      //   alert('Please complete the reCAPTCHA');
+      //   return;
+      // }
+      // const response_captcha = await fetch('/api/submit', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ recaptchaValue }),
+      // });
+
+      // const data = await response_captcha.json();
+
+      if (captchaVerified) {
         //alert('Form submitted successfully');
         const response = await fetch('https://idiimage.com/wp-json/custom/v1/submit-form', {
           method: 'POST',
@@ -141,8 +170,13 @@ const Form2 = (props) => {
           </div>
           <div className="mt-10"><Recaptcha recaptchaRef={recaptchaRef} onChange={handleRecaptchaChange} /></div>
           <div className="mt-10">
-            <button type="submit"
-              className="block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get Quote</button>
+            <button type="button"
+              onClick={async(e) => {await verifyCaptcha(); handleSubmit(e)}}
+              // disabled={!recaptchaValue}
+              className={twMerge("block w-full rounded-md bg-[#2164A1] uppercase px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", !recaptchaValue ? "hover:disabled:cursor-not-allowed opacity-50":null)}
+            >
+              Get Quote
+            </button>
           </div>
         </form>
       </Container>
