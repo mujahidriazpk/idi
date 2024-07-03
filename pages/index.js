@@ -54,10 +54,10 @@ const Home = () => {
       <Container className="flex flex-wrap">
         <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14">
           <div className="text-[#333333]">
-            For law firms, efficient document management is crucial. Our legal document scanning service converts paper records into a text-searchable digital archive, improving security and accessibility.
+            For law firms, efficient document management is crucial. Our comprehensive legal document scanning and indexing services convert paper records into a text-searchable digital archive, enhancing security, accessibility, and compliance.
           </div>
           <div className="font-bold py-5">
-            With expertise in legal scanning and litigation support, we enhance your law firm’s document management.
+            With expertise in legal scanning, OCR, and litigation support, we optimize your law firm’s document management processes.
           </div>
           <div className="font-bold py-5">
             <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
