@@ -113,8 +113,18 @@ const Home = () => {
           </div>
           <div className="flex items-center justify-center w-full lg:w-1/2">
               <div className="py-5 text-base leading-normal text-gray-500">
-                Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
+              Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
               </div>
+          </div>
+          <div className="flex items-center w-full lg:w-1/2">
+            <div className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
+              What is OCR?
+            </div>
+          </div>
+          <div className="flex items-center justify-center w-full lg:w-1/2">
+            <div className="py-5 text-base leading-normal text-gray-500">
+              OCR (Optical Character Recognition) technology converts scanned documents into editable, searchable data. At Indexing Digital, we use advanced OCR to streamline document retrieval, enhance accuracy, and improve accessibility for law firms.
+            </div>
           </div>
         </Container>
       </div>
