@@ -46,7 +46,6 @@ const Home = () => {
           </div>
         </div>
       </Hero>
-      {/*<LogoScroller />*/}
 
       <Container className="flex flex-wrap">
         <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14">
@@ -190,7 +189,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      {/*<Benefits data={benefitOne} />*/}
+
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           All Services Include
@@ -234,18 +233,9 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      {/*<TestimonialScroller />*/}
+
       <Form2 formId={formId}/>
-      {/*
-      <Container className="pb-0">
-        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
-          We Digitized the Constitution of the United States</div>
-        <div className="flex w-full flex-col text-center">We Will Use the Same State of the Art Technology to Preserve Your Precious Memories</div>
-        <div className="my-4 flex-col text-center"><a href="/" className="bg-[#2164A1] w-auto px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Learn More
-        </a></div>
-      </Container>
-      */}
+
       <Container >
       <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
         Additional services
@@ -293,7 +283,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </>
   );
 }
