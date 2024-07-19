@@ -1,40 +1,35 @@
-import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/img/hero.png";
 
-const Hero = () => {
+const Hero = ({bgUrl, block1, block2, block3, children}) => {
   return (
     <>
-      <div className="flex flex-wrap bg-[url('/img/hero_bg1.png')] bg-no-repeat bg-center bg-cover font-sans">
+      <div className={`flex flex-wrap bg-no-repeat bg-center bg-cover font-sans`} style={{ backgroundImage: `url(${bgUrl})` }}>
         <Container className='pb-0'>
           <div className="w-full min-h-screen flex flex-col justify-around">
-            <div className="flex flex-col justify-center w-full md:w-1/2">
-
-              <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52 ">
-                Litigation Document Scanning & Indexing Services.
-              </div>
-              <div className="flex gap-x-10">
-                <img src="/img/a-rating.png" className="w-20 h-full" />
-                <img src="/img/footerlogo2.png" className="w-16 h-full" />
-              </div>
-
-            </div>
-            
-            
+            {children}
             <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-1 uppercase text-center mt-10 md:mt-none mb-5 md:mb-none">
               <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
-                <p>23+ years</p>
-                <p>of experience</p>
+                {block1.map((b, i) => {
+                  return (
+                    <p key={i}>{b}</p>
+                  )
+                })}
               </div>
 
               <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
-                <p>Digitizing priceless</p> 
-                <p>documents</p>
+                {block2.map((b, i) => {
+                  return (
+                    <p key={i}>{b}</p>
+                  )
+                })}
               </div>
 
               <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
-                <p>unparalleled quality,</p> 
-                <p>speed & value</p>
+                {block3.map((b, i) => {
+                  return(
+                    <p key={i}>{b}</p>
+                  )
+                })}
               </div>
             </div>
 

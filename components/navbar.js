@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import Logo from "../public/img/logo.svg"
 
-const Navbar = () => {
+const Navbar = ({formId}) => {
   const navigation = [
     "Product",
     "Features",
@@ -54,7 +54,7 @@ const Navbar = () => {
               <p>Free Consultation</p>
             </div>
           </div>
-          <Link href="#quote_form" className="px-4 py-2 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+          <Link href={"#" + formId} className="px-4 py-2 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
             Get Quote
           </Link>
         </div>

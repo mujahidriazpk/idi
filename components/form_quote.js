@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import Container from "./container";
 import Recaptcha from './Recaptcha';
 
-const Form2 = (props) => {
+const Form2 = ({formId}) => {
   const [recaptchaValue, setRecaptchaValue] = useState(null);
   const [recaptchaVerified, setRecaptchaVerified] = useState(false);
   const recaptchaRef = useRef();
@@ -101,7 +101,7 @@ const Form2 = (props) => {
       <Container className='w-full md:w-2/3'>
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           Request a quote</div>
-        <form id="quote_form" method="POST" className="mx-auto" onSubmit={handleSubmit}>
+        <form id={formId} method="POST" className="mx-auto" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label htmlFor="full-name" className="block text-sm font-semibold leading-6 text-gray-900">Full name</label>
