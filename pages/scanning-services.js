@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
             </Hero>
 
-            <Container className="flex flex-wrap">
+            {/* <Container className="flex flex-wrap">
                 <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14 flex flex-col gap-y-5">
                     <div className="text-[#333333] text-4xl font-bold">
                         Expertise in Document Scanning Services
@@ -67,75 +67,80 @@ const Home = () => {
                     <div className="text-[#333333]">
                         Transform your physical documents into digital assets with our comprehensive scanning services. Whether it's documents, newspapers, books, microfilms, or utilizing advanced optical character recognition, we ensure high-quality, secure, and efficient digitization to meet all your needs.
                     </div>
-                    <div className="font-bold py-5">
-                        <Link href={"#"+formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
-                            Get FREE ESTIMATE
-                        </Link>
-                    </div>
                 </div>
-            </Container>
+            </Container> */}
 
             <Container>
-                <div className="flex w-full flex-col text-center my-4 text-4xl leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4x">
-                    Preserving the World's Precious History
-                </div>
-                <div className="flex w-full flex-col text-center my-4 text-sm leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4x">
-                    Below are some of the formats we digitize. If you don't see it below please give us a call.
-                </div>
-                <div className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div>
-                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
-                            <Image
-                                src={doc}
-                                alt="Documents"
-                                loading="lazy"
-                                placeholder="blur"
-                                className="m-auto "
-                            />
-                            <p className="mt-5">Documents</p>
-                        </div>
+                <div>
+                    <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14 flex flex-col gap-y-5">
+                    <div className="text-[#333333] text-4xl font-bold">
+                        Preserving the World's Precious History
                     </div>
                     <div>
-                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
-                            <Image
-                                src={book}
-                                alt="Books"
-                                loading="lazy"
-                                placeholder="blur"
-                                className="m-auto "
-                            />
-                            <p className="mt-5">Books</p>
+                        For over 23 years, libraries, museums, historical societies, and pharmaceutical companies have relied on the IDI team to deliver high profile and high volume scanning projects at a reasonable cost.
+                    </div>
+                    <div className="text-[#333333]">
+                        Transform your physical documents into digital assets with our comprehensive scanning services. Whether it's documents, newspapers, books, microfilms, or utilizing advanced optical character recognition, we ensure high-quality, secure, and efficient digitization to meet all your needs.
+                    </div>
+                    <div className="flex w-full flex-col text-center leading-snug tracking-tight text-gray-800 lg:leading-tight">
+                        Below are some of the formats we digitize. If you don't see it below please give us a call.
+                    </div>
+                    </div>
+                    <div className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div>
+                            <div className="flex flex-col justify-between text-center w-full h-full p-7">
+                                <Image
+                                    src={doc}
+                                    alt="Documents"
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    className="m-auto "
+                                />
+                                <p className="mt-5">Documents</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex flex-col justify-between text-center w-full h-full p-7">
+                                <Image
+                                    src={book}
+                                    alt="Books"
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    className="m-auto "
+                                />
+                                <p className="mt-5">Books</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex flex-col justify-between text-center w-full h-full p-7">
+                                <Image
+                                    src={news}
+                                    alt="Newspapers"
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    className="m-auto "
+                                />
+                                <p className="mt-5">Newspapers</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex flex-col justify-between text-center w-full h-full bg-transparent p-7">
+                                <Image
+                                    src={film}
+                                    alt="Microfilms"
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    className="m-auto "
+                                />
+                                <p className="mt-5">Microfilms</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
-                            <Image
-                                src={news}
-                                alt="Newspapers"
-                                loading="lazy"
-                                placeholder="blur"
-                                className="m-auto "
-                            />
-                            <p className="mt-5">Newspapers</p>
-                        </div>
+                    <div className="font-bold py-5 text-center">
+                        <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+                            Get Quote
+                        </Link>
                     </div>
-                    <div>
-                        <div className="flex flex-col justify-between text-center w-full h-full bg-transparent p-7">
-                            <Image
-                                src={film}
-                                alt="Microfilms"
-                                loading="lazy"
-                                placeholder="blur"
-                                className="m-auto "
-                            />
-                            <p className="mt-5">Microfilms</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="font-bold py-5 text-center">
-                    <Link href={"#"+formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
-                        Get Quote
-                    </Link>
                 </div>
             </Container>
 

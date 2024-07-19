@@ -22,9 +22,9 @@ const Navbar = ({formId}) => {
           <p>Most Affordable</p>
         </div>
       </div>
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-14 bg-red-500">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-14">
         {/* Logo  */}
-        <Link href="/" className="bg-green-500">
+        <Link href="/">
           <Image
             src={Logo}
             alt="logo"
@@ -33,7 +33,7 @@ const Navbar = ({formId}) => {
           />
         </Link>
 
-        <div className="flex mr-3 space-x-4 nav__item justify-center items-center bg-green-500">
+        <div className="flex mr-3 space-x-4 nav__item justify-center items-center">
           <div className="hidden gap-x-3 justify-center items-center md:flex">
             <div className="flex flex-col grey clear-both w-auto text-sm items-center text-[#BEBDBD] font-semibold uppercase">
               <div className="flex">
