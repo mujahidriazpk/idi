@@ -33,8 +33,8 @@ const Home = () => {
             <Hero
                 bgUrl={"/img/tablet1.png"}
                 block1={["23+ years", "of experience"]}
-                block2={["Digitizing priceless", "documents"]}
-                block3={["OCR", "Technology"]}
+                block2={["Responsible for Digitizing", "Priceless Documents"]}
+                block3={["A+ Better Business Bureau", "Rating"]}
             >
                 <div className="flex flex-col justify-center w-full md:w-2/3">
                     <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52 md:mt-44">
@@ -58,14 +58,14 @@ const Home = () => {
 
             <Container className="flex flex-wrap">
                 <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14 flex flex-col gap-y-5">
-                    <div className="text-[#333333]">
-                        Transform your physical documents into digital assets with our comprehensive scanning services. Whether it's documents, newspapers, books, microfilms, or utilizing advanced optical character recognition, we ensure high-quality, secure, and efficient digitization to meet all your needs.
-                    </div>
-                    <div className="text-[#333333] text-lg font-bold">
-                        We are Experts Document Management
+                    <div className="text-[#333333] text-4xl font-bold">
+                        Expertise in Document Scanning Services
                     </div>
                     <div>
-                        For over 23 years, libraries, museums, historical societies, and pharmaceutical companies have relied on the IDI team to deliver high profile and high volume scanning projects at a reasonable cost
+                        For over 23 years, libraries, museums, historical societies, and pharmaceutical companies have relied on the IDI team to deliver high profile and high volume scanning projects at a reasonable cost.
+                    </div>
+                    <div className="text-[#333333]">
+                        Transform your physical documents into digital assets with our comprehensive scanning services. Whether it's documents, newspapers, books, microfilms, or utilizing advanced optical character recognition, we ensure high-quality, secure, and efficient digitization to meet all your needs.
                     </div>
                     <div className="font-bold py-5">
                         <Link href={"#"+formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
@@ -90,7 +90,7 @@ const Home = () => {
                                 alt="Documents"
                                 loading="lazy"
                                 placeholder="blur"
-                                className="m-auto shadow-2xl"
+                                className="m-auto "
                             />
                             <p className="mt-5">Documents</p>
                         </div>
@@ -102,7 +102,7 @@ const Home = () => {
                                 alt="Books"
                                 loading="lazy"
                                 placeholder="blur"
-                                className="m-auto shadow-2xl"
+                                className="m-auto "
                             />
                             <p className="mt-5">Books</p>
                         </div>
@@ -114,7 +114,7 @@ const Home = () => {
                                 alt="Newspapers"
                                 loading="lazy"
                                 placeholder="blur"
-                                className="m-auto shadow-2xl"
+                                className="m-auto "
                             />
                             <p className="mt-5">Newspapers</p>
                         </div>
@@ -126,7 +126,7 @@ const Home = () => {
                                 alt="Microfilms"
                                 loading="lazy"
                                 placeholder="blur"
-                                className="m-auto shadow-2xl"
+                                className="m-auto "
                             />
                             <p className="mt-5">Microfilms</p>
                         </div>
@@ -178,6 +178,7 @@ const Home = () => {
                                 className="m-auto"
                             />
                             <div className="text-[#333333] text-center text-lg font-bold">HIPAA Compliant</div>
+                            <div className="text-[#333333] text-center text-sm">{"(if applicable)"}</div>
                         </div>
                     </div>
                     <div className="">

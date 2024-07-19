@@ -8,7 +8,7 @@ const Hero = ({bgUrl, block1, block2, block3, children}) => {
           <div className="w-full min-h-screen flex flex-col justify-around">
             {children}
             <div className="flex flex-wrap text-white font-sans justify-center items-center gap-x-1 gap-y-1 uppercase text-center mt-10 md:mt-none mb-5 md:mb-none">
-              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-72">
                 {block1.map((b, i) => {
                   return (
                     <p key={i}>{b}</p>
@@ -16,7 +16,7 @@ const Hero = ({bgUrl, block1, block2, block3, children}) => {
                 })}
               </div>
 
-              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-72">
                 {block2.map((b, i) => {
                   return (
                     <p key={i}>{b}</p>
@@ -24,7 +24,7 @@ const Hero = ({bgUrl, block1, block2, block3, children}) => {
                 })}
               </div>
 
-              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-64">
+              <div className="p-7 bg-[#f5f6f8] bg-opacity-40 rounded-md w-full md:w-72">
                 {block3.map((b, i) => {
                   return(
                     <p key={i}>{b}</p>
