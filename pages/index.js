@@ -14,7 +14,6 @@ import Navbar from "../components/navbar";
 import React from "react";
 import Container from "../components/container";
 import Form2 from "../components/form_quote";
-import Footer from "../components/footer";
 
 const Home = () => {
   const formId = "quote_form"

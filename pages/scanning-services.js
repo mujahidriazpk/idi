@@ -4,24 +4,23 @@ import Link from "next/link";
 import bird from "../public/img/bird.png";
 import hands from "../public/img/hands.png";
 import lock from "../public/img/lock.png";
-import doc from "../public/img/documents.jpg";
-import book from "../public/img/books.jpg";
-import news from "../public/img/newspapers.jpg";
-import film from "../public/img/microfilms.jpg";
+import doc from "../public/img/documents.png";
+import book from "../public/img/books.png";
+import news from "../public/img/newspapers.png";
+import film from "../public/img/microfilms.png";
 import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import React from "react";
 import Container from "../components/container";
 import Form2 from "../components/form_quote";
-import Footer from "../components/footer";
 
 const Home = () => {
     const formId = "scanning_quote_form"
     return (
         <>
             <Head>
-                <title>Litigation Scanning Services | Indexing Digital Information</title>
+                <title>Document Scanning Services | Indexing Digital Information</title>
                 <meta
                     name="description"
                     content="Innovative Document Imaging is a world leader in document imaging and document management solutions. IDI maintains a state-of-the-art document conversion facility in East Brunswick, New Jersey. Our company mission is to supply the best service possible at a reasonable"
@@ -84,9 +83,8 @@ const Home = () => {
                     Below are some of the formats we digitize. If you don't see it below please give us a call.
                 </div>
                 <div className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div className="lg:col-span-2 xl:col-auto">
-                        <div className="flex flex-col justify-between text-center w-full h-full bg-white p-7">
-                            {/* <img src={doc} className="shadow-2xl"/> */}
+                    <div>
+                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
                             <Image
                                 src={doc}
                                 alt="Documents"
@@ -97,9 +95,8 @@ const Home = () => {
                             <p className="mt-5">Documents</p>
                         </div>
                     </div>
-                    <div className="">
-                        <div className="flex flex-col justify-between text-center w-full h-full bg-white p-7">
-                            {/* <img src={book} className="shadow-2xl" /> */}
+                    <div>
+                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
                             <Image
                                 src={book}
                                 alt="Books"
@@ -110,8 +107,8 @@ const Home = () => {
                             <p className="mt-5">Books</p>
                         </div>
                     </div>
-                    <div className="">
-                        <div className="flex flex-col justify-between text-center w-full h-full bg-white p-7">
+                    <div>
+                        <div className="flex flex-col justify-between text-center w-full h-full p-7">
                             <Image
                                 src={news}
                                 alt="Newspapers"
@@ -122,8 +119,8 @@ const Home = () => {
                             <p className="mt-5">Newspapers</p>
                         </div>
                     </div>
-                    <div className="">
-                        <div className="flex flex-col justify-between text-center w-full h-full bg-white p-7">
+                    <div>
+                        <div className="flex flex-col justify-between text-center w-full h-full bg-transparent p-7">
                             <Image
                                 src={film}
                                 alt="Microfilms"
