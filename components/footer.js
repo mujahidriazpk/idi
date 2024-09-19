@@ -130,40 +130,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex items-center justify-end w-full lg:w-1/2">
-            {/*<div className="">
-              <div className="flex mt-5 space-x-5 text-white">
-                <a
-                  href="https://www.facebook.com/IDI.Solutions/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Facebook</span>
-                  <Facebook />
-                </a>
-                <a
-                  href="https://twitter.com/IDI_Solutions_"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Twitter</span>
-                  <Twitter />
-                </a>
-                <a
-                  href="https://www.instagram.com/idi_solutions"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Instagram</span>
-                  <Instagram />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/innovative-document-imaging/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Linkedin</span>
-                  <Linkedin />
-                </a>
-              </div>
-            </div>*/}
-          </div>
         </div>
       </Container>
       {/* Do not remove this 

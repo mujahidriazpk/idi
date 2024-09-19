@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import Logo from "../public/img/logo.svg"
 
-const Navbar = () => {
+const Navbar = ({formId}) => {
   const navigation = [
     "Product",
     "Features",
@@ -22,14 +22,14 @@ const Navbar = () => {
           <p>Most Affordable</p>
         </div>
       </div>
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-14">
         {/* Logo  */}
         <Link href="/">
           <Image
             src={Logo}
             alt="logo"
-            width={120}
-            height={100}
+            width={170}
+            height={150}
           />
         </Link>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
               <p>Free Consultation</p>
             </div>
           </div>
-          <Link href="#quote_form" className="px-4 py-2 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+          <Link href={"#" + formId} className="px-4 py-2 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
             Get Quote
           </Link>
         </div>

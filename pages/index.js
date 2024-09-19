@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import heroImg from "../public/img/hero.png";
-import files from "../public/img/files.png";
 import bird from "../public/img/bird.png";
 import hands from "../public/img/hands.png";
 import lock from "../public/img/lock.png";
@@ -13,29 +11,12 @@ import flim from "../public/img/flim_scan.png";
 import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
-import SectionTitle from "../components/sectionTitle";
 import React from "react";
 import Container from "../components/container";
-
-import { benefitOne, benefitTwo } from "../components/data";
-import Benefits from "../components/benefits";
-import Form from "../components/form";
 import Form2 from "../components/form_quote";
-import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
-import PopupWidget from "../components/popupWidget";
-import TestimonialScroller from '../components/TestimonialScroller';
-import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-} from "@heroicons/react/24/solid";
 
-import LogoScroller from '../components/LogoScroller';
 const Home = () => {
+  const formId = "quote_form"
   return (
     <>
       <Head>
@@ -47,20 +28,34 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Navbar />
-      <Hero />
-      {/*<LogoScroller />*/}
+      <Navbar formId={formId}/>
+      <Hero
+        bgUrl={"/img/hero_bg1.png"}
+        block1={["23+ years", "of experience"]}
+        block2={["Digitizing priceless", "documents"]}
+        block3={["unparalleled quality,", "speed & value"]}
+      >
+        <div className="flex flex-col justify-center w-full md:w-1/2">
+          <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52">
+            Litigation Document Scanning & Indexing Services.
+          </div>
+          <div className="flex gap-x-10">
+            <img src="/img/a-rating.png" className="w-20 h-full" />
+            <img src="/img/footerlogo2.png" className="w-16 h-full" />
+          </div>
+        </div>
+      </Hero>
 
       <Container className="flex flex-wrap">
         <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14">
           <div className="text-[#333333]">
-            For law firms, efficient document management is crucial. Our legal document scanning service converts paper records into a text-searchable digital archive, improving security and accessibility.
+            For law firms, efficient document management is crucial. Our comprehensive legal document scanning and indexing services convert paper records into a text-searchable digital archive, enhancing security, accessibility, and compliance.
           </div>
           <div className="font-bold py-5">
-            With expertise in legal scanning and litigation support, we enhance your law firm’s document management.
+            With expertise in legal scanning, OCR, and litigation support, we optimize your law firm’s document management processes.
           </div>
           <div className="font-bold py-5">
-            <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+            <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
               Get FREE ESTIMATE
             </Link>
           </div>
@@ -97,7 +92,7 @@ const Home = () => {
               We provide Unmatched Quality, Speed, and Value
             </div>
             <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
-              <Link href="#quote_form" className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+              <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
                 Get FREE ESTIMATE
               </Link>
             </div>
@@ -113,8 +108,18 @@ const Home = () => {
           </div>
           <div className="flex items-center justify-center w-full lg:w-1/2">
               <div className="py-5 text-base leading-normal text-gray-500">
-                Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
+              Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
               </div>
+          </div>
+          <div className="flex items-center w-full lg:w-1/2">
+            <div className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
+              What is OCR?
+            </div>
+          </div>
+          <div className="flex items-center justify-center w-full lg:w-1/2">
+            <div className="py-5 text-base leading-normal text-gray-500">
+              OCR (Optical Character Recognition) technology converts scanned documents into editable, searchable data. At Indexing Digital, we use advanced OCR to streamline document retrieval, enhance accuracy, and improve accessibility for law firms.
+            </div>
           </div>
         </Container>
       </div>
@@ -183,7 +188,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      {/*<Benefits data={benefitOne} />*/}
+
       <Container className="pb-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           All Services Include
@@ -227,18 +232,9 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      {/*<TestimonialScroller />*/}
-      <Form2 />
-      {/*
-      <Container className="pb-0">
-        <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
-          We Digitized the Constitution of the United States</div>
-        <div className="flex w-full flex-col text-center">We Will Use the Same State of the Art Technology to Preserve Your Precious Memories</div>
-        <div className="my-4 flex-col text-center"><a href="/" className="bg-[#2164A1] w-auto px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2164A1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Learn More
-        </a></div>
-      </Container>
-      */}
+
+      <Form2 formId={formId}/>
+
       <Container >
       <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
         Additional services
@@ -286,7 +282,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </>
   );
 }
