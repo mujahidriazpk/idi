@@ -45,85 +45,24 @@ const Home = () => {
           </div>
         </div>
       </Hero>
-
+      <div className="flex flex-wrap bg-gray-100">
       <Container className="flex flex-wrap">
-        <div className="text-center m-auto text-base w-full md:w-2/3 leading-normal py-14">
+        <div className="text-center m-auto text-xl font-[500] w-full md:w-2/3 leading-normal">
           <div className="text-[#333333]">
             For law firms, efficient document management is crucial. Our comprehensive legal document scanning and indexing services convert paper records into a text-searchable digital archive, enhancing security, accessibility, and compliance.
           </div>
           <div className="font-bold py-5">
             With expertise in legal scanning, OCR, and litigation support, we optimize your law firm’s document management processes.
           </div>
-          <div className="font-bold py-5">
+          <div className="font-normal text-base py-5">
             <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
               Get FREE ESTIMATE
             </Link>
           </div>
         </div>
       </Container>
-      <div className="flex flex-wrap bg-[url('/img/library.png')] bg-no-repeat bg-center bg-cover">
-        <Container>
-          <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 w-full md:w-2/3 leading-normal  text-white">
-              Expertise in Legal Document Management
-            </div>
-            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
-              Indexing Digital Information has been in business for over 23 years and is a world leader in Legal Document Management. And Secure Scanning Services
-            </div>
-          </div>
-        </Container>
       </div>
-      <div className="flex flex-wrap bg-[url('/img/book.png')] bg-no-repeat bg-center bg-cover my-2">
-        <Container>
-          <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 w-full md:w-2/3 leading-normal  text-white">
-              Trusted with Digitizing Priceless Documents
-            </div>
-            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
-              We have been entrusted with priceless, one of a kind, documents such as the US Constitution and other historical works so you can be confident that your files will be handled and maintained with the level of care and accountability.
-            </div>
-          </div>
-        </Container>
-      </div>
-      <div className="flex flex-wrap bg-[url('/img/jet.png')] bg-no-repeat bg-center bg-cover">
-        <Container>
-          <div className="flex flex-col justify-center h-96">
-            <div className="text-3xl text-center m-auto my-0 pb-5 w-full md:w-2/3 leading-normal  text-white">
-              We provide Unmatched Quality, Speed, and Value
-            </div>
-            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
-              <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
-                Get FREE ESTIMATE
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </div>
-      <div className="flex flex-wrap bg-[#F5F6F8]">
-        <Container className="flex flex-wrap py-14 w-full md:w-2/3">
-          <div className="flex items-center w-full lg:w-1/2">
-              <div className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
-                What is<br />Litigation Scanning?
-              </div>
-          </div>
-          <div className="flex items-center justify-center w-full lg:w-1/2">
-              <div className="py-5 text-base leading-normal text-gray-500">
-              Litigation scanning services are designed to streamline the document management process for law firms and legal teams. These services use advanced technology to scan, digitize, and index legal documents, making them easily searchable and accessible.
-              </div>
-          </div>
-          <div className="flex items-center w-full lg:w-1/2">
-            <div className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight">
-              What is OCR?
-            </div>
-          </div>
-          <div className="flex items-center justify-center w-full lg:w-1/2">
-            <div className="py-5 text-base leading-normal text-gray-500">
-              OCR (Optical Character Recognition) technology converts scanned documents into editable, searchable data. At Indexing Digital, we use advanced OCR to streamline document retrieval, enhance accuracy, and improve accessibility for law firms.
-            </div>
-          </div>
-        </Container>
-      </div>
-      <Container>
+      <Container className='xl:py-0'>
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4x">
           Why you need this?</div>
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
@@ -188,8 +127,24 @@ const Home = () => {
           </div>
         </div>
       </Container>
-
-      <Container className="pb-0">
+      <div className="flex flex-wrap bg-[url('/img/hunters-race.png')] bg-no-repeat bg-center bg-cover">
+        <Container>
+          <div className="flex flex-col justify-center h-96">
+            <div className="text-3xl text-center m-auto my-0 pb-5 w-full md:w-2/3 leading-normal  text-white">
+            Expertise in Legal Document Management
+            </div>
+            <div className="text-center m-auto my-0 text-base w-2/3 md:w-1/2 leading-normal  text-white">
+            Indexing Digital Information has been in business for over 23 years and is a world leader in Legal Document Management. And Secure Scanning Services
+            </div>
+            <div className="text-center m-auto my-8 text-base w-2/3 md:w-1/2 leading-normal  text-white">
+              <Link href={"#" + formId} className="px-4 py-2 mt-4 text-sm uppercase text-white bg-[#2164A1] w-auto font-semibold">
+              CONTACT OUR EXPERTS TEAM
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <Container className="xl:py-0">
         <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
           All Services Include
         </div>
@@ -232,56 +187,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
-
       <Form2 formId={formId}/>
-
-      <Container >
-      <div className="flex w-full flex-col text-center my-4 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
-        Additional services
-        </div>
-        <div className="grid gap-0 w-2/3 justify-center m-auto lg:grid-cols-2 xl:grid-cols-4 items-center">
-          <div className="flex-row">
-          <Image
-                src={doc}
-                alt="Document Scanning Images"
-                loading="eager"
-                placeholder="blur"
-                className="m-auto"
-              />
-            <div className="text-center w-full text-base font-semibold py-2">Document Scanning</div>
-          </div>
-          <div className="flex-row">
-          <Image
-                src={book}
-                alt="Book Scanning Images"
-                loading="eager"
-                placeholder="blur"
-                className="m-auto"
-              />
-            <div className="text-center w-full text-base font-semibold py-2">Book Scanning</div>
-          </div>
-          <div className="flex-row">
-          <Image
-                src={news}
-                alt="Newspaper Scanning Images"
-                loading="eager"
-                placeholder="blur"
-                className="m-auto"
-              />
-            <div className="text-center w-full text-base font-semibold py-2">Newspaper Scanning</div>
-          </div>
-          <div className="flex-row">
-          <Image
-                src={flim}
-                alt="Flim Scanning Images"
-                loading="eager"
-                placeholder="blur"
-                className="m-auto"
-              />
-            <div className="text-center w-full text-base font-semibold py-2">Microfilm Scanning</div>
-          </div>
-        </div>
-      </Container>
     </>
   );
 }
