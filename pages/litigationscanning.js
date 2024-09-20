@@ -35,9 +35,12 @@ const Home = () => {
         block2={["Digitizing priceless", "documents"]}
         block3={["unparalleled quality,", "speed & value"]}
       >
-        <div className="flex flex-col justify-center w-full md:w-1/2">
+        <div className="flex flex-col justify-center w-full md:w-2/3">
           <div className="text-4xl lg:text-5xl text-left text-white font-extralight mb-5 mt-52">
             Litigation Document Scanning & Indexing Services.
+          </div>
+          <div className="mb-8 text-base w-2/3 md:w-2/3 leading-normal  text-white">
+          Make your legal documents easily searchable and accessible with our litigation scanning solutions. 
           </div>
           <div className="flex gap-x-10">
             <img src="/img/a-rating.png" className="w-20 h-full" />
