@@ -40,7 +40,8 @@ const Form2 = ({formId}) => {
     name: '',
     email: '',
     number: '',
-    documents_type: '',
+    // initialize with the first option so the select is tracked correctly
+    documents_type: 'Document Scanning',
     image_enhancement: '',
   });
 
@@ -64,7 +65,7 @@ const Form2 = ({formId}) => {
           },
           body: JSON.stringify({
             input_values: {
-              1: formData.name,  // Replace 1 with the actual field ID for 'name'
+              1.3: formData.name,  // Replace 1 with the actual field ID for 'name'
               2: formData.email,
               9: formData.number,
               13: formData.documents_type,
